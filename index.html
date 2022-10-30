@@ -56,9 +56,14 @@
 			p {
 				color: #aba8a8 !important;
 			}
-			.btn-primary{
+			.btn-primary,.header-btn-collapse-nav{
 				background-color: #fbed23 !important;
 				color: black !important;
+			}
+			@media(max-width: 786px){
+				.header-logo a img{
+					max-width: 60px;
+				}
 			}
 		</style>
 
@@ -122,6 +127,13 @@
 											</nav>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="header-column header-column-border-left flex-grow-0 justify-content-center">
+								<div class="header-row pl-4 justify-content-end">
+									<button class="btn header-btn-collapse-nav ml-0 ml-sm-3" data-toggle="collapse" data-target=".header-nav-main nav">
+										<i class="fas fa-bars"></i>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -234,14 +246,14 @@
 					</div>
 				</section>
 				<section id="integratedServices" class="section bg-color-dark-scale-3 m-0 border-0">
-					<div class="container py-5">
+					<div class="container py-md-5">
 						<div class="row align-items-center justify-content-center">
 							<div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 mt-sm-5" style="top: 1.7rem;">
 								<img src="img/bg-2.jpg" class="img-fluid position-absolute d-none d-sm-block appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="300" style="top: 10%; left: -50%;" alt="" />
 								<img src="img/bg-5.png" class="img-fluid position-absolute d-none d-sm-block appear-animation" data-appear-animation="expandIn" style="top: -33%; left: -29%;" alt="" />
 								<img src="img/bg-3.jpg" class="img-fluid position-relative appear-animation mb-2" data-appear-animation="expandIn" data-appear-animation-delay="600" alt="" />
 							</div>
-							<div class="col-lg-6 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0">
+							<div class="col-lg-6 pb-sm-4 pb-lg-0 pr-lg-5 mb-sm-5 mb-lg-0 mt-5 mt-lg-0">
 								<h2 class="font-weight-bold text-color-light text-7 mb-4"><span class="custom-color">Our </span>Integrated Services</h2>
 								<p class="pr-5 mr-5">In Retail Route we deliver the best integrated services from retail design phase to after sales service phase! We are there step by step from planning to execution.</p>
 								<p class="pr-5 mr-5">Design, Furnishing, Project Management, Installations, After Sale Service .</p>
